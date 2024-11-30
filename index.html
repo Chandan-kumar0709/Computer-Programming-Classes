@@ -6,91 +6,10 @@
   <title>Computer Programming Classes</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
-  padding: 1em 0;
-}
-
-.marquee {
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  position: relative;
-}
-
-.marquee-content {
-  display: flex;
-  gap: 50px;
-  position: absolute;
-  white-space: nowrap;
-  animation: marquee-scroll 15s linear infinite;
-}
-
-.marquee-content a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.marquee-content a:hover {
-  text-decoration: underline;
-}
-
-/* Keyframes for marquee animation */
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Footer Styling */
-footer {
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .marquee-content a {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .marquee-content {
-    gap: 30px;
-  }
-
-  .marquee-content a {
-    font-size: 0.8rem;
-  }
-}
-
-  </style>
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header>
     <div class="container">
       <h1 class="logo">Computer Programming Classes</h1>
       <nav class="nav" id="nav-menu">
@@ -101,7 +20,6 @@ footer {
           <li><a href="admission.html">Admission</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-
         </ul>
       </nav>
       <div class="hamburger" id="hamburger">
@@ -109,47 +27,46 @@ footer {
       </div>
     </div>
   </header>
-  <section>
-    <marquee width = "100%" direction="right" height="auto">All guidance for getting government certificate via government  organization like NPTEL (SWAYAM) and NIELIT.</marquee>
-  </section>
-   <header>
-    <h1>Useful Study Links</h1>
-  </header>
+
+  <!-- Scrolling Text -->
   <div class="marquee">
-    <div class="marquee-content">
-      <a href="https://www.w3schools.com" target="_blank">W3Schools - Learn Web Development</a>
-      <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks - Programming Tutorials</a>
-      <a href="https://www.coursera.org" target="_blank">Coursera - Online Courses</a>
-      <a href="https://www.udemy.com" target="_blank">Udemy - Learn Anything Online</a>
-      <a href="https://www.khanacademy.org" target="_blank">Khan Academy - Free Education</a>
-      <a href="https://www.codecademy.com" target="_blank">Codecademy - Learn Coding Online</a>
-      <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs - Developer Resources</a>
-      <a href="https://www.nptel.ac.in" target="_blank">NPTEL - Engineering Tutorials</a>
-    </div>
+    <p>All guidance for getting government certificates via organizations like NPTEL (SWAYAM) and NIELIT.</p>
   </div>
-  <section id="gallery" class="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <p>Explore moments from our classes, events, and success stories.</p>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="./images/classroom.jfif" alt="Classroom Session">
-        </div>
-        <div class="gallery-item">
-          <img src="./images/workshop.jfif" alt="Workshop">
-        </div>
-        <div class="gallery-item">
-          <img src="./images/discussion.jfif" alt="Project Discussion">
-        </div>
-        <div class="gallery-item">
-          <img src="./images/certificate.jfif" alt="Certificate Distribution">
-        </div>
-        <div class="gallery-item">
-          <img src="./images/students.jfif" alt="Our Students">
-        </div>
-        <div class="gallery-item">
-          <img src="./images/ChandanPIC7.jpeg" alt="Faculty" onclick="document.location='https://chandan-kumar0709.github.io/MyPortfolio'">
-        </div>
+
+  <!-- Useful Links -->
+  <section class="useful-links">
+    <h2>Useful Study Links</h2>
+    <div class="marquee-content">
+      <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+      <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.coursera.org" target="_blank">Coursera</a>
+      <a href="https://www.udemy.com" target="_blank">Udemy</a>
+      <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
+      <a href="https://www.codecademy.com" target="_blank">Codecademy</a>
+      <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+      <a href="https://www.nptel.ac.in" target="_blank">NPTEL</a>
+    </div>
+  </section>
+ <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="./images/classroom.jfif" alt="Classroom Session">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/workshop.jfif" alt="Workshop">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/discussion.jfif" alt="Project Discussion">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/certificate.jfif" alt="Certificate Distribution">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/students.jfif" alt="Our Students">
+      </div>
+      <div class="gallery-item">
+        <img src="./images/ChandanPIC7.jpeg" alt="Faculty" onclick="window.location.href='https://chandan-kumar0709.github.io/MyPortfolio'">
       </div>
     </div>
   </section>
