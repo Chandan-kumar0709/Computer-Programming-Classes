@@ -5,6 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Courses - Computer Programming Classes</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em 0;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  height:25px;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee-scroll 15s linear infinite;
+}
+
+.marquee-content a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.marquee-content a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframes for marquee animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .marquee-content a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-content {
+    gap: 30px;
+  }
+
+  .marquee-content a {
+    font-size: 0.8rem;
+  }
+}
+
+  </style>
 </head>
 <body>
     <header class="header">
@@ -25,7 +99,21 @@
           </div>
         </div>
       </header>
-      
+        <header>
+    <h1>Useful Study Links</h1>
+  </header>
+  <div class="marquee">
+    <div class="marquee-content">
+      <a href="https://www.w3schools.com" target="_blank">W3Schools - Learn Web Development</a>
+      <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks - Programming Tutorials</a>
+      <a href="https://www.coursera.org" target="_blank">Coursera - Online Courses</a>
+      <a href="https://www.udemy.com" target="_blank">Udemy - Learn Anything Online</a>
+      <a href="https://www.khanacademy.org" target="_blank">Khan Academy - Free Education</a>
+      <a href="https://www.codecademy.com" target="_blank">Codecademy - Learn Coding Online</a>
+      <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs - Developer Resources</a>
+      <a href="https://www.nptel.ac.in" target="_blank">NPTEL - Engineering Tutorials</a>
+    </div>
+  </div>
 
   <section class="courses">
     <div class="container">
