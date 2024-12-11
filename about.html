@@ -3,78 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Computer Programming Classes</title>
+  <title>Computer Programming Classes</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* About Section */
-.about {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
-
-.about-text {
-  flex: 1;
-  color: #333;
-  line-height: 1.6;
-}
-
-.about-text h3 {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #002b5c;
-}
-
-.about-text ul {
-  margin: 10px 0 20px;
-  padding-left: 20px;
-}
-
-.about-text ul li {
-  margin-bottom: 10px;
-  list-style: disc;
-}
-
-.about-image {
-  flex: 1;
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-  </style>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <h1 class="logo">Computer Programming Classes</h1>
-          <nav class="nav" id="nav-menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="admission.html">Admission</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-          </nav>
-          <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </header>
-      
+  <!-- Header -->
+  <!-- Header -->
+  <header class="logo">
+ 
+    <i>COMPUTER PROGRAMMING CLASSES</i>
   
+</header>
+  <header>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./courses.html">Courses</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./admission.html">Admission</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+ 
+   <!-- Scrolling Text -->
+  
+   <marquee class="marquee" width="auto" direction="right" height="50px">
+    All guidance for getting government certificates via organizations like <u id="swayam">NPTEL (SWAYAM)</u> and <u id="nielit">NIELIT</u>.
+    </marquee>
       <section id="about" class="about">
         <div class="container">
           <h2>About Us</h2>
@@ -116,28 +77,47 @@
                 Whether you're a beginner taking your first steps into programming or a professional looking to upgrade your skills, <strong>Computer Programming Classes</strong> is here to guide you every step of the way. Let’s work together to unlock your potential and achieve your career aspirations.
               </p>
             </div>
-            <div class="about-image">
-              <img src="./images/advertisement.jpeg" alt="About Us">
-            </div>
           </div>
         </div>
       </section>
       
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="courses.html">Courses</a>
-        <a href="admission.html">Admission</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="gallery.html">Gallery</a>
-
-      </div>
-      <p>© 2024 Computer Programming Classes. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-<script src="script.js"></script>
-</html>
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2>What Our Students Say</h2>
+          <div class="testimonial-slider">
+            <div class="testimonial">
+              <p>"This coaching center changed my career. The instructors are the best!"</p>
+              <h4>Anish Raj</h4>
+            </div>
+            <div class="testimonial">
+              <p>"I learned so much about programming and web development here."</p>
+              <h4>Shravan Kumar</h4>
+            </div>
+            <div class="testimonial">
+              <p>"Highly recommend for anyone who wants to excel in their programming skills."</p>
+              <h4>Priti Kumari</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+    
+          </div>
+          <p>© 2024 Computer Programming Classes. All rights reserved.</p>
+        </div>
+      </footer>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
