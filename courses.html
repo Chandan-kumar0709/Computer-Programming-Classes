@@ -3,117 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Courses - Computer Programming Classes</title>
+  <title>Computer Programming Classes</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  background-color: #4CAF50;
-  color: white;
-  padding: 1em 0;
-}
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  position: relative;
-  height:25px;
-}
-
-.marquee-content {
-  display: flex;
-  gap: 50px;
-  position: absolute;
-  white-space: nowrap;
-  animation: marquee-scroll 15s linear infinite;
-}
-
-.marquee-content a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.marquee-content a:hover {
-  text-decoration: underline;
-}
-
-/* Keyframes for marquee animation */
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .marquee-content a {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .marquee-content {
-    gap: 30px;
-  }
-
-  .marquee-content a {
-    font-size: 0.8rem;
-  }
-}
-
-  </style>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <h1 class="logo">Computer Programming Classes</h1>
-          <nav class="nav" id="nav-menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="admission.html">Admission</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-          </nav>
-          <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </header>
-        <header>
-    <h1>Useful Study Links</h1>
-  </header>
-  <div class="marquee">
-    <div class="marquee-content">
-      <a href="https://www.w3schools.com" target="_blank">W3Schools - Learn Web Development</a>
-      <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks - Programming Tutorials</a>
-      <a href="https://www.coursera.org" target="_blank">Coursera - Online Courses</a>
-      <a href="https://www.udemy.com" target="_blank">Udemy - Learn Anything Online</a>
-      <a href="https://www.khanacademy.org" target="_blank">Khan Academy - Free Education</a>
-      <a href="https://www.codecademy.com" target="_blank">Codecademy - Learn Coding Online</a>
-      <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs - Developer Resources</a>
-      <a href="https://www.nptel.ac.in" target="_blank">NPTEL - Engineering Tutorials</a>
+  <!-- Header -->
+  <header class="logo">
+ 
+    <i>COMPUTER PROGRAMMING CLASSES</i>
+  
+</header>
+  <header>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./courses.html">Courses</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./admission.html">Admission</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-  </div>
+  </header>
+ 
+     <!-- Scrolling Text -->
+  
+  <marquee class="marquee" width="auto" direction="right" height="50px">
+    All guidance for getting government certificates via organizations like <u id="swayam">NPTEL (SWAYAM)</u> and <u id="nielit">NIELIT</u>.
+    </marquee>
+
+  <!-- Useful Links -->
+  <section class="useful-links">
+    <h2 id="Useful">Useful Study Links</h2>
+    <marquee class="marquee-content" width="auto" direction="left" height="50px" >
+      <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+      <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a>
+      <a href="https://www.coursera.org" target="_blank">Coursera</a>
+      <a href="https://www.udemy.com" target="_blank">Udemy</a>
+      <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
+      <a href="https://www.codecademy.com" target="_blank">Codecademy</a>
+      <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+      <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a>
+    </marquee>
+  </section>
 
   <section class="courses">
     <div class="container">
@@ -134,8 +70,7 @@ header {
       </div>
     </div>
   </section>
- <!-- Testimonials -->
- <section id="testimonials" class="testimonials">
+  <section id="testimonials" class="testimonials">
     <div class="container">
       <h2>What Our Students Say</h2>
       <div class="testimonial-slider">
@@ -154,6 +89,8 @@ header {
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
@@ -168,7 +105,7 @@ header {
       <p>© 2024 Computer Programming Classes. All rights reserved.</p>
     </div>
   </footer>
-</body>
-<script src="script.js"></script>
 
+  <script src="script.js"></script>
+</body>
 </html>
