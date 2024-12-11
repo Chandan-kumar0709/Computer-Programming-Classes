@@ -5,38 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Computer Programming Classes</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
+   <header class="logo">
+ 
+    <i>COMPUTER PROGRAMMING CLASSES</i>
+  
+</header>
   <header>
-    <div class="container">
-      <h1 class="logo">Computer Programming Classes</h1>
-      <nav class="nav" id="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="admission.html">Admission</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./courses.html">Courses</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./admission.html">Admission</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </header>
+ 
 
   <!-- Scrolling Text -->
-  <div class="marquee">
-    <p>All guidance for getting government certificates via organizations like NPTEL (SWAYAM) and NIELIT.</p>
-  </div>
+  
+  <marquee class="marquee" width="auto" direction="right" height="50px">
+    All guidance for getting government certificates via organizations like <u id="swayam">NPTEL (SWAYAM)</u> and <u id="nielit">NIELIT</u>.
+    </marquee>
 
   <!-- Useful Links -->
   <section class="useful-links">
-    <h2>Useful Study Links</h2>
-    <div class="marquee-content">
+    <h2 id="Useful">Useful Study Links</h2>
+    <marquee class="marquee-content" width="auto" direction="left" height="50px" >
       <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
       <a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a>
       <a href="https://www.coursera.org" target="_blank">Coursera</a>
@@ -44,30 +48,32 @@
       <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a>
       <a href="https://www.codecademy.com" target="_blank">Codecademy</a>
       <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
-      <a href="https://www.nptel.ac.in" target="_blank">NPTEL</a>
-    </div>
+      <a href="https://swayam.gov.in/" target="_blank">SWAYAM</a>
+    </marquee>
   </section>
  <section id="gallery" class="gallery">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <div class="gallery-item">
+ 
+      <div class="gallery-item" id="gitem1">
         <img src="./images/classroom.jfif" alt="Classroom Session">
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" id="gitem2">
         <img src="./images/workshop.jfif" alt="Workshop">
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" id="gitem3">
         <img src="./images/discussion.jfif" alt="Project Discussion">
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" id="gitem4">
         <img src="./images/certificate.jfif" alt="Certificate Distribution">
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" id="gitem5">
         <img src="./images/students.jfif" alt="Our Students">
       </div>
-      <div class="gallery-item">
-        <img src="./images/ChandanPIC7.jpeg" alt="Faculty" onclick="window.location.href='https://chandan-kumar0709.github.io/MyPortfolio'">
+      <div class="gallery-item" id="gitem6">
+        <img src="./images/ChandanPIC7.jpeg" alt="Faculty" onclick="window.location.href='https://chandan-kumar0709.github.io/MyPortfolio'" >
       </div>
+  
     </div>
   </section>
   <!-- Hero Section -->
@@ -80,31 +86,63 @@
   </section>
 
   <!-- Popular Courses -->
-  <section id="courses" class="courses">
-    <div class="container">
-      <h2>Popular Courses</h2>
-      <div class="course-cards">
-        <div class="card">
-          <img src="./images/programming.jfif" alt="Programming">
-          <h3>Programming Languages</h3>
-          <p>Master C, C++, Java, Python, and C#.</p>
-          <a href="courses.html" class="btn btn-secondary">Learn More</a>
-        </div>
-        <div class="card">
-          <img src="./images/web development.jfif" alt="Web Development">
-          <h3>Web Development</h3>
-          <p>Build dynamic and responsive websites.</p>
-          <a href="courses.html" class="btn btn-secondary">Learn More</a>
-        </div>
-        <div class="card">
-          <img src="./images/certificate.jfif" alt="Certification">
-          <h3>Certification Courses</h3>
-          <p>Get certified in ADCA and DCA programs.</p>
-          <a href="courses.html" class="btn btn-secondary">Learn More</a>
-        </div>
+<section id="courses" class="courses">
+  <div class="container">
+    <h2>Popular Courses</h2>
+    <div class="course-cards">
+
+      <!-- Programming Languages -->
+      <div class="card">
+        <img src="./images/programming.jfif" alt="Programming">
+        <h3>Programming Languages</h3>
+        <p>
+          Master programming languages like C, C++, Java, Python, and C#. Build strong fundamentals in coding, algorithms, and application development.
+        </p>
+        <ul>
+          <li><b>C:</b> Learn procedural programming and memory management.</li>
+          <li><b>C++:</b> Master OOP concepts and advanced data structures.</li>
+          <li><b>Java:</b> Dive into platform-independent programming and frameworks.</li>
+          <li><b>Python:</b> Explore data science, AI/ML, and web development.</li>
+          <li><b>C#:</b> Create Windows applications and work with the .NET framework.</li>
+        </ul>
+        <a href="courses/programming.html" class="btn btn-secondary">Learn More</a>
       </div>
+
+      <!-- Web Development -->
+      <div class="card">
+        <img src="./images/web development.jfif" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>
+          Build dynamic and responsive websites with front-end and back-end development skills. Learn to create full-stack applications.
+        </p>
+        <ul>
+          <li><b>Front-End:</b> Master HTML, CSS, JavaScript, and frameworks like Bootstrap.</li>
+          <li><b>Back-End:</b> Learn server-side programming with Node.js or PHP.</li>
+          <li><b>Full-Stack Projects:</b> Develop complete websites with database integration.</li>
+          <li><b>Portfolio Building:</b> Create and host your projects for real-world use.</li>
+        </ul>
+        <a href="courses/web development.html" class="btn btn-secondary">Learn More</a>
+      </div>
+
+      <!-- Certification Courses -->
+      <div class="card">
+        <img src="./images/certificate.jfif" alt="Certification">
+        <h3>Certification Courses</h3>
+        <p>
+          Enroll in ADCA (Advanced Diploma in Computer Applications) or DCA (Diploma in Computer Applications) to gain industry-recognized certifications.
+        </p>
+        <ul>
+          <li><b>ADCA:</b> Advanced training in MS Office, Tally, and database management.</li>
+          <li><b>DCA:</b> Basics of computer applications, internet usage, and data entry.</li>
+          <li><b>Certifications:</b> Recognized by leading institutions and industries.</li>
+          <li><b>Employment-Ready:</b> Practical knowledge for various roles in IT and administration.</li>
+        </ul>
+        <a href="courses/certifications.html" class="btn btn-secondary">Learn More</a>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Testimonials -->
   <section id="testimonials" class="testimonials">
